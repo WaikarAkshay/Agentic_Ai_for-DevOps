@@ -1,6 +1,6 @@
 import ollama 
 while True:
-    user_input=input()
+    user_input=input("Enter our query here (type 'exit' or 'stop' to stop): ")
     if user_input=="stop" or user_input=="exit":
         break
     else:
@@ -8,7 +8,8 @@ while True:
             model= "mistral:latest",
             messages=[{
                 'role': 'user',
+
                 'content': user_input
             }]
             )
-            print(responce['message']['content'])
+            print("models output: ",responce['message']['content'])
