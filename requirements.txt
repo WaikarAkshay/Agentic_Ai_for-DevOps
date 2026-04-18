@@ -1,1 +1,7 @@
 ollama
+fastmcp
+langchain
+langchain-ollama
+langgraph
+langchain-mcp-adapters
+langchain-mistralai
